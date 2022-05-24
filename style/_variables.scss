@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$c-primary-a: hsl(0, 78%, 62%);
+$c-primary-b: hsl(180, 62%, 55%);
+$c-primary-c: hsl(34, 97%, 64%);
+$c-primary-d: hsl(212, 86%, 64%);
+$c-heading: hsl(234, 12%, 34%);
+$c-font: hsl(229, 6%, 66%);
+$c-white: hsl(0, 0%, 98%);
+$c-shadow: hsla(229, 6%, 66%, 0.46);
+$font: 15px;
+
+@mixin border-card($color) {
+  border-top: 4px solid $color;
+}
+
+@mixin breakpoint-lg {
+  @media (min-width: 1200px) {
+    @content
+  }
+}

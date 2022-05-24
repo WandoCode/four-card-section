@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1.8em 0;
+  padding: 1.8em;
+  box-shadow: 0 10px 20px -2px $c-shadow;
+  border-radius: 0.4em;
+  max-width: 21em;
+
+  &:nth-child(1) {
+    @include border-card($c-primary-b);
+  }
+
+  &:nth-child(2) {
+    @include border-card($c-primary-a);
+  }
+
+  &:nth-child(3) {
+    @include border-card($c-primary-c);
+  }
+
+  &:nth-child(4) {
+    @include border-card($c-primary-d);
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2em;
+
+    & img {
+      height: 3.7em;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.2em;
+  }
+
+  @include breakpoint-lg {
+    &:nth-child(1) {
+      margin: 9em 2em;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+    &:nth-child(4) {
+      margin: 9em 2em;
+    }
+  }
+}

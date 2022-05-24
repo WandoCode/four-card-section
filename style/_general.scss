@@ -1,0 +1,47 @@
+body, h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: $font;
+  @include breakpoint-lg {
+    font-size: 18px;
+  }
+}
+
+body {
+  @include breakpoint-lg {
+    height: 100vh;
+  }
+}
+
+h1 {
+  font-size: 1.6em;
+  color: $c-heading;
+  font-weight: 600;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 1.6em;
+  color: $c-heading;
+  font-weight: 200;
+  text-align: center;
+
+  &--card {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.37em;
+  }
+}
+
+.text {
+  color: $c-font;
+  text-align: center;
+  line-height: 1.6em;
+  font-weight: 400;
+
+  &--card {
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 1.8em;
+
+  }
+}
