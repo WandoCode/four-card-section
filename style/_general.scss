@@ -1,9 +1,6 @@
 body, h1, h2 {
   font-family: "Poppins", sans-serif;
   font-size: $font;
-  @include breakpoint-lg {
-    font-size: 18px;
-  }
 }
 
 body {
@@ -13,22 +10,28 @@ body {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: $c-heading;
   font-weight: 600;
   text-align: center;
+  @include breakpoint-lg {
+    font-size: 2.4em;
+  }
 }
 
 .h2 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: $c-heading;
   font-weight: 200;
   text-align: center;
+  @include breakpoint-lg {
+    font-size: 2.3em;
+  }
 
   &--card {
     text-align: left;
     font-weight: 600;
-    font-size: 1.37em;
+    font-size: 1.2em;
   }
 }
 

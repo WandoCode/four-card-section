@@ -9,35 +9,40 @@ body, h1, h2 {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
-@media (min-width: 1200px) {
-  body, h1, h2 {
-    font-size: 18px;
-  }
-}
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   body {
     height: 100vh;
   }
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: hsl(234deg, 12%, 34%);
   font-weight: 600;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 2.4em;
+  }
+}
 
 .h2 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: hsl(234deg, 12%, 34%);
   font-weight: 200;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  .h2 {
+    font-size: 2.3em;
+  }
+}
 .h2--card {
   text-align: left;
   font-weight: 600;
-  font-size: 1.37em;
+  font-size: 1.2em;
 }
 
 .text {
@@ -58,7 +63,7 @@ h1 {
   align-items: center;
   padding: 2em 1em;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .fourCards {
     height: 100%;
     padding: 5em 0 0 0;
@@ -85,7 +90,7 @@ h1 {
 .heading__description {
   margin: 1em 0 3em 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .heading {
     max-width: 33em;
   }
@@ -126,7 +131,7 @@ h1 {
 .card__title {
   margin-bottom: 0.2em;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .card:nth-child(1) {
     margin: 9em 2em;
   }
